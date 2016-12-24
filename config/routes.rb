@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources :property_pictures
+  resources :interactions
+  resources :interactions_types
+  resources :announcements
+  resources :properties
+  devise_for :users
+
+  root to: "application#index"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
